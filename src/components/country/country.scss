@@ -1,0 +1,42 @@
+@use "../../index.scss" as color;
+.country{
+    background-color: color.$white;
+    text-align: center;
+    min-width: 250px;
+    max-width: 250px;
+    height: 300px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.country-info {
+    line-height: 5px;
+    text-align: left;
+    font-family:'Nunito Sans', sans-serif;
+    padding: 20px;
+}
+
+.country-title {
+    margin-top: 0;
+    line-height: 17px;
+    font-weight: 800;
+}
+
+.country-subtitle {
+    display: inline-block;
+    margin: 0;
+    font-weight: 600;
+    font-size: 18px;
+}
+.country-flag {
+    height: 150px;
+    max-width: 250px;
+    min-width: 250px;
+}
+.country-text {
+    display: inline-block;
+    margin-block: 9px;
+}
+.country-row {
+    line-height: 1.5px;
+}

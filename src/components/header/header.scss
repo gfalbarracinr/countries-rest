@@ -1,0 +1,26 @@
+@use '../../index.scss' as variables;
+.header {
+    font-family:'Nunito Sans', sans-serif;
+    display: flex;
+    flex-direction: row;
+    background-color: variables.$white;
+    padding: variables.$upperTopPadding variables.$sideTopPadding;
+    border-bottom: 0.5px solid variables.$white;
+    margin: 0;
+    height: 30px;
+    
+}
+.header-title {
+    font-family:'Nunito Sans', sans-serif;
+    align-self: center;
+    font-weight: 800;
+    font-size: medium;
+}
+
+.button {
+    margin-left: auto;
+    font-family:'Nunito Sans', sans-serif;
+    border: none;
+    background-color: variables.$white;
+    cursor: pointer;
+}

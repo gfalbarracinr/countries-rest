@@ -1,0 +1,17 @@
+@use "index.scss" as variables;
+body{
+  background-color: variables.$lightGray;
+  margin: 0;
+}
+.container{
+  margin: 0;
+}
+.country-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: variables.$upperTopPadding variables.$sideTopPadding;
+}
+.container-dark{
+  background-color: black;
+}
