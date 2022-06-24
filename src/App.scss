@@ -5,6 +5,8 @@ body{
 }
 .container{
   margin: 0;
+  height: 100%;
+  min-height: 100vh;
 }
 .country-container {
   display: flex;
@@ -13,5 +15,5 @@ body{
   padding: variables.$upperTopPadding variables.$sideTopPadding;
 }
 .container-dark{
-  background-color: black;
+  background-color: variables.$veryDarkBlue;
 }

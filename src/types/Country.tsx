@@ -5,6 +5,7 @@ interface Country {
     population: number
     region: Region
     capital: string
-    flag: string
+    flag: string,
+    code: string
 }
 export default Country;

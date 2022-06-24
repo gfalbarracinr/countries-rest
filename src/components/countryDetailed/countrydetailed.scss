@@ -1,0 +1,114 @@
+@use "../../index.scss" as variables;
+.country-info-container{
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  grid-area: info;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-left: 3%;
+  max-height: 350px;
+}
+
+.country-info-text {
+  display: flex;
+  & > h2 {
+    font-weight: 600;
+    font-size: 18px;
+    margin-right: 5px;
+  }
+}
+
+.country-desc-container {
+  display: grid;
+  grid-template-areas: 
+  "flag flag title title"
+  "flag  flag info  info"
+  "flag  flag info info"
+  ". . border border";
+  grid-template-columns: 25% 25% auto auto;
+  margin-left: 3%;
+  margin-top: 5%;
+  font-family: variables.$fontFamily;
+  
+}
+
+.country-button{
+  margin-top: 5%;
+  margin-left: 3%; 
+  border: none;
+  border-color: variables.$lightGray;
+  background-color: variables.$white;
+  width: 80px;
+  cursor: pointer;
+
+}
+
+.country-info-flag{
+  grid-area: flag;
+  height: 100%;
+  width: 85%;
+  max-height: 400px;
+  max-width: 700px;
+}
+
+.country-title{
+  grid-area: title;
+  align-self: center;
+  margin-left: 3%;
+  font-weight: 800;
+}
+
+.country-borders{
+  grid-area: border;
+  list-style-type: none;
+  padding: 0;
+  margin-left: 3%;
+  & > li {
+    display: inline;
+    margin-left: 5px;
+
+  }
+
+  & > h2 {
+    font-weight: 600;
+    display: inline;
+    margin-right: 20px;
+    font-size: 18px;
+  }
+}
+.border-button{
+  border: none;
+  border-color: variables.$lightGray;
+  background-color: variables.$white;
+  width: 80px;
+  cursor: pointer;
+}
+.country-detailed-container {
+  min-height: 100vh;
+  height: 100%;
+}
+.country-detailed-dark {
+  background-color: variables.$veryDarkBlue;
+  color: variables.$white;
+}
+
+.country-button-dark {
+  background-color: variables.$darkBlue;
+  color: variables.$white;
+}
+
+@media (max-width: variables.$layout-breakpoint-small) {
+  .country-desc-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .country-info-container{
+    display: inline-block;
+    max-height: none;
+  }
+  .country-title{
+    margin-top: 5%;
+  }
+
+}

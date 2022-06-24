@@ -8,6 +8,8 @@ import Nav from './components/nav';
 import countryFilterType from './types/CountryFilterType';
 import { RootState } from './store';
 import Mode from './types/Mode';
+import Loading from './components/loading';
+import Error from './components/error';
 
 function App() {
   const [countries, setCountries] = useState<Array<Country>>([]);
@@ -35,6 +37,7 @@ function App() {
       region: country.region,
       capital,
       flag: country.flags.png,
+      code: country.altSpellings[0],
     };
     return land;
   });
@@ -80,8 +83,8 @@ function App() {
     <div className={`container container-${theme.toString()}`}>
       <Header />
       <Nav />
-      { loading && <p>Wait a moment please</p>}
-      { error !== '' && !loading && <p>There are a problem with the API</p>}
+      { loading && <Loading />}
+      { error !== '' && !loading && <Error message={error} />}
       <main className="country-container">
         { error === '' && !loading && currentCountries.map((country: Country) => (
           <CountryInfo
@@ -91,6 +94,7 @@ function App() {
             region={country.region}
             capital={country.capital}
             flag={country.flag}
+            code={country.code}
           />
         )) }
       </main>

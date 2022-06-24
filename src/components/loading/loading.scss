@@ -1,0 +1,40 @@
+@use '../../index.scss' as variables;
+
+@mixin loading($time){
+    margin-top: 7px;
+    background: radial-gradient(farthest-side,currentColor 90%,variables.$white);
+    background-size: 10px 10px;
+    width: 10px;
+    height: 10px;
+    background-repeat: no-repeat;
+    animation:movement $time infinite alternate linear;
+}
+.loading-container {
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  margin-top: 5%;
+  font-family: variables.$fontFamily;
+
+}
+
+.loading-text {
+  font-weight: 800;
+  align-self: center;
+  margin-right: 5px;
+}
+
+.loading-dot-1 {
+  @include loading(1.7s);
+}
+
+.loading-dot-2 {
+  @include loading(2s);
+}
+.loading-dot-3 {
+  @include loading(1.7s);
+}
+@keyframes movement{
+  0% {align-self: center;}
+  100% {align-self: flex-start;}
+}
