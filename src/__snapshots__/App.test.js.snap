@@ -1,0 +1,169 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component tests App snapshot test 1`] = `
+<div
+  className="container container-light"
+>
+  <header
+    className="header header-light"
+  >
+    <h1
+      className="header-title"
+    >
+      Where in the world
+    </h1>
+    <button
+      className="button button-light"
+      onClick={[Function]}
+      type="button"
+    >
+      Dark mode
+    </button>
+  </header>
+  <nav
+    className="navigation"
+  >
+    <input
+      className="nav-search nav-search-light"
+      onChange={[Function]}
+      placeholder="Search for a country..."
+      type="search"
+    />
+    <select
+      className="nav-filter nav-filter-light"
+      onChange={[Function]}
+      value="Select a region"
+    >
+      <option
+        className="nav-filter-element"
+        value="all"
+      >
+        All regions
+      </option>
+      <option
+        className="nav-filter-element"
+        value="Europe"
+      >
+        Europe
+      </option>
+      <option
+        className="nav-filter-element"
+        value="Americas"
+      >
+        Americas
+      </option>
+      <option
+        className="nav-filter-element"
+        value="Asia"
+      >
+        Asia
+      </option>
+      <option
+        className="nav-filter-element"
+        value="Africa"
+      >
+        Africa
+      </option>
+      <option
+        className="nav-filter-element"
+        value="Oceania"
+      >
+        Oceania
+      </option>
+      <option
+        className="nav-filter-element"
+        value="Antarctic"
+      >
+        Antarctic
+      </option>
+    </select>
+  </nav>
+  <main
+    className="country-container"
+  />
+</div>
+`;
+
+exports[`App snapshot test 1`] = `
+<div
+  className="container container-light"
+>
+  <header
+    className="header header-light"
+  >
+    <h1
+      className="header-title"
+    >
+      Where in the world
+    </h1>
+    <button
+      className="button button-light"
+      onClick={[Function]}
+      type="button"
+    >
+      Dark mode
+    </button>
+  </header>
+  <nav
+    className="navigation"
+  >
+    <input
+      className="nav-search nav-search-light"
+      onChange={[Function]}
+      placeholder="Search for a country..."
+      type="search"
+    />
+    <select
+      className="nav-filter nav-filter-light"
+      onChange={[Function]}
+      value="Select a region"
+    >
+      <option
+        className="nav-filter-element"
+        value="all"
+      >
+        All regions
+      </option>
+      <option
+        className="nav-filter-element"
+        value="Europe"
+      >
+        Europe
+      </option>
+      <option
+        className="nav-filter-element"
+        value="Americas"
+      >
+        Americas
+      </option>
+      <option
+        className="nav-filter-element"
+        value="Asia"
+      >
+        Asia
+      </option>
+      <option
+        className="nav-filter-element"
+        value="Africa"
+      >
+        Africa
+      </option>
+      <option
+        className="nav-filter-element"
+        value="Oceania"
+      >
+        Oceania
+      </option>
+      <option
+        className="nav-filter-element"
+        value="Antarctic"
+      >
+        Antarctic
+      </option>
+    </select>
+  </nav>
+  <main
+    className="country-container"
+  />
+</div>
+`;
